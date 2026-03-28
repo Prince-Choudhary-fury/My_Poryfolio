@@ -1,0 +1,21 @@
+/*--------------------------------------------------------------
+# Projects
+--------------------------------------------------------------*/
+.project-video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.Projects .content h3 {
+  font-weight: 700;
+  font-size: 26px;
+  color: #173b6c;
+}
+
+.Projects .content p:last-child {
+  margin-bottom: 0;
+}
+
+

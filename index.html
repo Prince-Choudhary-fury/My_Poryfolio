@@ -26,8 +26,23 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <!-- =============================== -->
+  <!-- 🎨 MAIN CSS COMPONENT ARCHITECTURE -->
+  <!-- =============================== -->
+
+  <!-- Layout -->
+  <link href="assets/css/layout/grid.css" rel="stylesheet">
+  <link href="assets/css/layout/sidebar.css" rel="stylesheet">
+
+  <!-- UI Components -->
+  <link href="assets/css/components/buttons.css" rel="stylesheet">
+
+  <!-- Page Sections -->
+  <link href="assets/css/sections/hero.css" rel="stylesheet">
+  <link href="assets/css/sections/resume.css" rel="stylesheet">
+  <link href="assets/css/sections/projects.css" rel="stylesheet">
+  <link href="assets/css/sections/portfolio.css" rel="stylesheet">
+  <link href="assets/css/sections/contact.css" rel="stylesheet">
 
 
   <!-- ======================================================== -->
@@ -38,31 +53,22 @@
   <!-- ======= Mobile nav toggle button ======= -->
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
-  <!-- ======= Header ======= -->
+  <!-- ===================================== -->
+  <!-- 1. SIDEBAR & NAVIGATION COMPONENT     -->
+  <!-- ===================================== -->
   <header id="header">
     <div class="d-flex flex-column">
 
-      <div class="profile">
-        <img src="assets/img/hero-bg2.webp" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Prince Choudhary</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a href="https://github.com/Prince-Choudhary-fury" target="_blank" class="Github"><i
-              class="bi bi-github"></i></a>
-          <a href="https://assetstore.unity.com/publishers/86535" target="_blank" class="Unity"><i
-              class="bi bi-unity"></i></a>
-          <a href="https://www.linkedin.com/in/prince-choudhary-640a12214/" target="_blank" class="linkedin"><i
-              class="bx bxl-linkedin"></i></a>
-          <a href="https://www.youtube.com/channel/UCfpIgxxEeusizNlsblE0whw" target="_blank" class="Youtube"><i
-          class="bx bxl-youtube"></i></a>
-        </div>
+      <div class="profile sidebar-profile">
+        <h1 class="text-light sidebar-name"><a href="index.html">Prince Choudhary</a></h1>
+        <p class="sidebar-role text-center">Unity Game Developer</p>
       </div>
 
       <nav id="navbar" class="nav-menu navbar">
         <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Skills</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Professional Experience</span></a></li>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Professional
+                Experience</span></a></li>
           <li><a href="#Projects" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Projects</span></a></li>
           <li><a href="#Work-Sample" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Work
                 Sample's</span></a></li>
@@ -72,126 +78,125 @@
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <video autoplay loop muted plays-inline class="top-back-video">
+  <!-- ===================================== -->
+  <!-- 2. HERO / ABOUT COMPONENT             -->
+  <!-- ===================================== -->
+  <section id="hero" class="hero-about d-flex">
+    <video autoplay loop muted playsinline class="top-back-video">
       <source src="assets/img/Topbg.mp4">
     </video>
-    <div class="hero-container" data-aos="fade-in">
-      <h1>Prince Choudhary</h1>
-      <p>- <span class="typed" data-typed-items="Unity Game Developer"></span></p>
+    <div class="hero-overlay"></div>
+    <div class="container hero-about-container" data-aos="fade-in">
+
+      <!-- Left: Profile Photo & Name -->
+      <div class="hero-left">
+        <img src="assets/img/hero-bg2.webp" alt="Prince Choudhary - Profile Picture" class="hero-profile-img">
+        <h1>Prince Choudhary</h1>
+        <p class="hero-role">- <span class="typed" data-typed-items="Unity Game Developer"></span></p>
+        <div class="hero-social-links">
+          <a href="https://github.com/Prince-Choudhary-fury" target="_blank" title="GitHub"><i
+              class="bi bi-github"></i></a>
+          <a href="https://assetstore.unity.com/publishers/86535" target="_blank" title="Unity Asset Store"><i
+              class="bi bi-unity"></i></a>
+          <a href="https://www.linkedin.com/in/prince-choudhary-640a12214/" target="_blank" title="LinkedIn"><i
+              class="bx bxl-linkedin"></i></a>
+          <a href="https://www.youtube.com/channel/UCfpIgxxEeusizNlsblE0whw" target="_blank" title="YouTube"><i
+              class="bx bxl-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Right: About Content -->
+      <div class="hero-right" data-aos="fade-left" data-aos-delay="100">
+        <h2 class="hero-about-title">About Me</h2>
+        <p class="hero-about-desc">Experienced Unity Developer with a demonstrated history of working in the Computer
+          Games industry. Skilled in Unity, C#, C++, GitLab, Game Development, and Photon Multiplayer. Strong
+          engineering professional with a B.Tech CSE from Aravali College of Engineering and Management.</p>
+
+        <div class="hero-info-grid">
+          <div class="hero-info-item">
+            <i class="bi bi-mortarboard-fill"></i>
+            <div>
+              <strong>Degree</strong>
+              <span>B.Tech, Computer Science</span>
+            </div>
+          </div>
+          <div class="hero-info-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <div>
+              <strong>City</strong>
+              <span>New Delhi, India</span>
+            </div>
+          </div>
+          <div class="hero-info-item">
+            <i class="bi bi-envelope-fill"></i>
+            <div>
+              <strong>Email</strong>
+              <span>princechoudhary0909@gmail.com</span>
+            </div>
+          </div>
+          <div class="hero-info-item">
+            <i class="bi bi-telephone-fill"></i>
+            <div>
+              <strong>Phone</strong>
+              <span>+91 7827607710</span>
+            </div>
+          </div>
+          <div class="hero-info-item">
+            <i class="bi bi-briefcase-fill"></i>
+            <div>
+              <strong>Experience</strong>
+              <span>4+ Years</span>
+            </div>
+          </div>
+          <div class="hero-info-item">
+            <i class="bi bi-controller"></i>
+            <div>
+              <strong>Speciality</strong>
+              <span>Multiplayer &amp; Game Mechanics</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-cta">
+          <a href="https://drive.google.com/file/d/1HJXWTLUyO_TaIpBf6FFOXrzIjMnaNzCq/view?usp=sharing" target="_blank"
+            class="btn-resume">Download Resume</a>
+          <a href="#contact" class="btn-contact scrollto">Get In Touch</a>
+        </div>
+
+        <!-- Skills merged into hero -->
+        <div class="hero-skills" id="skills">
+          <h3 class="hero-skills-title">Skills</h3>
+          <div class="hero-skills-grid">
+            <span class="skill-tag"><img src="assets/img/Skills_Icon/Unity.png" alt="Unity"> Unity 3D</span>
+            <span class="skill-tag"><img src="assets/img/Skills_Icon/C2.png" alt="C#"> C#</span>
+            <span class="skill-tag"><img src="assets/img/Skills_Icon/GAME DEVELOPMENT.png" alt="Game Dev"> Game
+              Development</span>
+            <span class="skill-tag"><img src="assets/img/Skills_Icon/PHOTON PUN 2.png" alt="Photon PUN 2"> Photon PUN
+              2</span>
+            <span class="skill-tag"><img src="assets/img/Skills_Icon/PHOTON fusion.png" alt="Photon Fusion"> Photon
+              Fusion</span>
+            <span class="skill-tag"><img src="assets/img/Skills_Icon/c++.png" alt="C++"></span>
+            <span class="skill-tag"><img src="assets/img/Skills_Icon/C.png" alt="C"> C</span>
+            <span class="skill-tag"><img src="assets/img/Skills_Icon/gitlab.png" alt="GitLab"> GitLab</span>
+            <span class="skill-tag"><img src="assets/img/Skills_Icon/unity_plastic.png" alt="Unity VCS"> Unity Version
+              Control</span>
+            <span class="skill-tag"><img src="assets/img/Skills_Icon/Soket.io.png" alt="Socket.io"> Socket.io</span>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </section><!-- End Hero -->
+  </section><!-- End Hero / About -->
 
   <main id="main">
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
+    <!-- About section merged into Hero above -->
 
-        <div class="section-title">
-          <h2>About</h2>
-          <p>Experienced Unity Developer with a demonstrated history of working in the Computer Games industry. Skilled
-            in Unity, C# , C++, GitLab, English, Game Development, and C (Programming Language). Strong engineering
-            professional with a B.Tech CSE focused in Computer Software Engineering from Aravali College of Engineering
-            and Management.</p>
-        </div>
+    <!-- Skills section merged into Hero above -->
 
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/hero-bg2.webp" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content mt-5" data-aos="fade-left">
-            <h3 class="mt-5">Unity Game Developer</h3>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 7827607710</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>New Delhi, Delhi</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>B.Tech in Computer
-                      science</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong>
-                    <span>princechoudhary0909@gmail.com</span>
-                  </li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Experience:</strong> <span>2+ Years</span></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End About Section -->
-
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Skills</h2>
-          <p>My skills include Unity 3D, C# scripting, game development, C++, C, and GitLab. With this knowledge, I can
-            create and develop games, work with various programming languages, and manage version control using GitLab.
-          </p>
-        </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6" data-aos="fade-up">
-
-            <div class="progress">
-              <span class="skill"><img src="assets/img/Skills_Icon/Unity.png"> Unity 3D</span>
-            </div>
-
-            <div class="progress">
-              <span class="skill"><img src="assets/img/Skills_Icon/C2.png"> C#</span>
-            </div>
-
-            <div class="progress">
-              <span class="skill"><img src="assets/img/Skills_Icon/GAME DEVELOPMENT.png" alt=""></i> Game
-                Development</span>
-            </div>
-            <div class="progress">
-              <span class="skill"><img src="assets/img/Skills_Icon/PHOTON PUN 2.png"> Photon Pun 2 (Multiplayer)</span>
-            </div>
-            <div class="progress">
-              <span class="skill"><img src="assets/img/Skills_Icon/PHOTON fusion.png"> Photon Fusion
-                (Multiplayer)</span>
-            </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="progress">
-              <span class="skill"><img src="assets/img/Skills_Icon/c++.png"> C++</span>
-            </div>
-
-            <div class="progress">
-              <span class="skill"><img src="assets/img/Skills_Icon/C.png"> C</span>
-            </div>
-
-            <div class="progress">
-              <span class="skill"><img src="assets/img/Skills_Icon/gitlab.png"> Git Lab </span>
-            </div>
-
-            <div class="progress">
-              <span class="skill"><img src="assets/img/Skills_Icon/unity_plastic.png"> Unity Version Control</span>
-            </div>
-
-            <div class="progress">
-              <span class="skill"><img src="assets/img/Skills_Icon/Soket.io.png"> Socket.io</span>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Skills Section -->
-
-    <!-- ======= Professional Experience Section ======= -->
+    <!-- ===================================== -->
+    <!-- 3. EXPERIENCE & RESUME COMPONENT      -->
+    <!-- ===================================== -->
     <section id="resume" class="resume">
       <div class="container">
 
@@ -248,14 +253,16 @@
         <div class="row ">
           <div class="col-lg-4 m-auto text-center">
             <button class="btn btn-primary m-auto p-auto btn-lg"><a
-                href="https://drive.google.com/file/d/1HJXWTLUyO_TaIpBf6FFOXrzIjMnaNzCq/view?usp=sharing" target="_blank"
-                style="color: white;">Resume</a></button>
+                href="https://drive.google.com/file/d/1HJXWTLUyO_TaIpBf6FFOXrzIjMnaNzCq/view?usp=sharing"
+                target="_blank" style="color: white;">Resume</a></button>
           </div>
         </div>
       </div>
     </section><!-- End Resume Section -->
 
-    <!-- ======= Projects Section ======= -->
+    <!-- ===================================== -->
+    <!-- 4. PROJECTS / VIDEO SHOWCASE COMPONENT-->
+    <!-- ===================================== -->
     <section id="Projects" class="Projects_mobile">
       <div class="container">
 
@@ -265,7 +272,7 @@
         <!-- =========================Warlands======================== -->
         <div class="row">
           <div class="col-lg-7 projects-video" data-aos="fade-right">
-            <video autoplay loop muted plays-inline style="height: 360px;">
+            <video class="project-video" loop muted playsinline>
               <source src="assets/img/game video/Gameplay Warlands.mp4">
             </video>
           </div>
@@ -283,11 +290,11 @@
         </div>
         <div class="line"></div>
         <div class="line1"></div>
-        
+
         <!-- =========================Underground Waifus======================== -->
         <div class="row">
           <div class="col-lg-7 projects-video" data-aos="fade-right">
-            <video autoplay loop muted plays-inline style="height: 360px;">
+            <video class="project-video" loop muted playsinline>
               <source src="assets/img/game video/UndergroundWaifusTCG.mp4">
             </video>
           </div>
@@ -297,8 +304,9 @@
             </a>
             <h6 class="text-muted">Warlands Corp (Offsite)</h6>
             <p style="font-size: 14px; color: rgb(156, 156, 156);">Sep 2021 to Present (Full Time)</p>
-            <p>Underground Waifus is a captivating NFT card game that merges physical and digital collecting. 
-              With unique editions, limited collections, and a player-driven economy, it’s a fusion of art, strategy, and blockchain technology. 
+            <p>Underground Waifus is a captivating NFT card game that merges physical and digital collecting.
+              With unique editions, limited collections, and a player-driven economy, it’s a fusion of art, strategy,
+              and blockchain technology.
               Dive into the future of TCG multiplayer and become a formidable waifus leader!</p>
             <div class="row">
             </div>
@@ -309,12 +317,12 @@
         <!-- =========================Survival======================== -->
         <div class="row">
           <div class="col-lg-7 mt-5 projects-video" data-aos="fade-right">
-            <video autoplay loop muted plays-inline style="height: 360px;">
+            <video class="project-video" loop muted playsinline>
               <source src="assets/img/game video/servival.mp4">
             </video>
           </div>
           <div class="col-lg-5 pt-4 pt-lg-0 content mt-3 " data-aos="fade-left">
-            <a href="#" target="_blank">
+            <a href="https://www.youtube.com/watch?v=TqqLzDVP2v0" target="_blank">
               <h3 class="mt-5">Survival Game</h3>
             </a>
             <p style="font-size: 14px; color: rgb(156, 156, 156);">Duration: Jul 2021 - Aug 2021</p>
@@ -324,55 +332,60 @@
             <div class="row">
             </div>
           </div>
-          
+
         </div>
         <div class="line"></div>
         <div class="line1"></div>
         <!-- =========================Multiplayer Addon======================== -->
         <div class="row">
           <div class="col-lg-7 mt-5 projects-video" data-aos="fade-right">
-            <video autoplay loop muted plays-inline style="height: 360px;">
+            <video class="project-video" loop muted playsinline>
               <source src="assets/img/game video/Fusion Multiplayer Addon.mp4">
             </video>
           </div>
           <div class="col-lg-5 pt-4 pt-lg-0 content mt-3 " data-aos="fade-left">
-            <a href="#" target="_blank">
+            <a href="https://www.youtube.com/watch?v=yGSR8xzqIEs" target="_blank">
               <h3 class="mt-5">Fusion Multiplayer Addon</h3>
             </a>
             <p style="font-size: 14px; color: rgb(156, 156, 156);">Duration: Jan 2024 - Feb 2024</p>
             <ul>
-              <li><b>Session Manager</b> to synchronize room details and game statistics, enhancing the overall gaming experience.</li>
+              <li><b>Session Manager</b> to synchronize room details and game statistics, enhancing the overall gaming
+                experience.</li>
               <li><b>Player Data Handler</b>, responsible for syncing all player stats.</li>
-              <li><b>Rejoining mechanism</b> for players to seamlessly re-enter rooms in case of network issues or sudden disconnects.</li>
-              <li><b>Host Migration</b> functionality, creating a new host if the existing one left the room, ensuring uninterrupted gameplay.</li>
+              <li><b>Rejoining mechanism</b> for players to seamlessly re-enter rooms in case of network issues or
+                sudden disconnects.</li>
+              <li><b>Host Migration</b> functionality, creating a new host if the existing one left the room, ensuring
+                uninterrupted gameplay.</li>
               <li><b>Lobby</b> to get all available room.</li>
               <li><b>Voice and Text chat</b> to comunicate InGame.</li>
-              <li><b>Network Character Controller</b>, ensuring synchronized player movement within the gaming environment.</li>
+              <li><b>Network Character Controller</b>, ensuring synchronized player movement within the gaming
+                environment.</li>
               <li>Network synchronized <b>weapon</b>.</li>
               <li><b>URP Settings Menu</b> (Including Graphics, Display and Audio Settings).</li>
-          </ul>
+            </ul>
             <div class="row">
             </div>
           </div>
-          
+
         </div>
         <div class="line"></div>
         <div class="line1"></div>
         <!-- =========================Charactercontroller======================== -->
         <div class="row">
           <div class="col-lg-7 mt-5 projects-video" data-aos="fade-right">
-            <video autoplay loop muted plays-inline style="height: 360px;">
+            <video class="project-video" loop muted playsinline>
               <source src="assets/img/game video/charactercontroller.mp4">
             </video>
           </div>
           <div class="col-lg-5 pt-4 pt-lg-0 content mt-3 " data-aos="fade-left">
-            <a href="https://warlands.io/" target="_blank">
+            <a href="https://www.youtube.com/watch?v=GE18HUyden4" target="_blank">
               <h3 class="mt-5">Character Controller</h3>
             </a>
             <p style="font-size: 14px; color: rgb(156, 156, 156);">Jul 2023 to Jul 2023</p>
-            <p>The character controller I made in Unity lets players move smoothly and dodge, skid, roll, 
-              and use weapons like swords, bows, and magic. It's easy to control and adds fun and dynamic 
-              gameplay, allowing players to explore and fight in the game world with different styles and strategies.</p>
+            <p>The character controller I made in Unity lets players move smoothly and dodge, skid, roll,
+              and use weapons like swords, bows, and magic. It's easy to control and adds fun and dynamic
+              gameplay, allowing players to explore and fight in the game world with different styles and strategies.
+            </p>
             <div class="row">
             </div>
           </div>
@@ -382,18 +395,20 @@
         <!-- =========================Dragon Controller======================== -->
         <div class="row">
           <div class="col-lg-7 mt-5 projects-video" data-aos="fade-right">
-            <video autoplay loop muted plays-inline style="height: 360px;">
+            <video class="project-video" loop muted playsinline>
               <source src="assets/img/game video/dragon controller.mp4">
             </video>
           </div>
           <div class="col-lg-5 pt-4 pt-lg-0 content mt-3 " data-aos="fade-left">
-            <a href="#" target="_blank">
+            <a href="https://www.youtube.com/watch?v=r51LUL3Lt7o" target="_blank">
               <h3 class="mt-5">Dragon Controller</h3>
             </a>
             <p style="font-size: 14px; color: rgb(156, 156, 156);">Duration: Aug 2023 to Aug 2023</p>
-            <p>The dragon controller I created in Unity enables players to control a dragon's movement with ease. 
-              It features a realistic locomotion system that allows the dragon to fly, glide, and walk on the ground seamlessly. 
-              Players can navigate through the game world using the dragon's wings, making the experience immersive and exciting.</p>
+            <p>The dragon controller I created in Unity enables players to control a dragon's movement with ease.
+              It features a realistic locomotion system that allows the dragon to fly, glide, and walk on the ground
+              seamlessly.
+              Players can navigate through the game world using the dragon's wings, making the experience immersive and
+              exciting.</p>
             <div class="row">
             </div>
           </div>
@@ -404,19 +419,20 @@
         <!-- =========================Race Game======================== -->
         <div class="row">
           <div class="col-lg-7 mt-5 projects-video" data-aos="fade-right">
-            <video autoplay loop muted plays-inline style="height: 360px;">
+            <video class="project-video" loop muted playsinline>
               <source src="assets/img/game video/race game.mp4">
             </video>
           </div>
           <div class="col-lg-5 pt-4 pt-lg-0 content mt-3 " data-aos="fade-left">
-            <a href="#" target="_blank">
+            <a href="https://www.youtube.com/watch?v=XtzNrtcO0WA" target="_blank">
               <h3 class="mt-5">Race Game</h3>
             </a>
             <p style="font-size: 14px; color: rgb(156, 156, 156);">Duration: Jul 2021 - Jul 2021</p>
-            <p>Different types of Tracks to race on it. This Game has different environments for different game 
-              levels and it also consist of so many exciting difficulties in between the race. 
-              There is a garage available in the game where player can boost their car to next level. 
-              The main motive behind this game was to create a realistic Game with different kinds of racing tracks at different locations.</p>
+            <p>Different types of Tracks to race on it. This Game has different environments for different game
+              levels and it also consist of so many exciting difficulties in between the race.
+              There is a garage available in the game where player can boost their car to next level.
+              The main motive behind this game was to create a realistic Game with different kinds of racing tracks at
+              different locations.</p>
             <div class="row">
             </div>
           </div>
@@ -425,7 +441,9 @@
     </section><!-- End Projects Section -->
 
 
-    <!-- ======= Work-Sample Section ======= -->
+    <!-- ===================================== -->
+    <!-- 5. WORK SAMPLES GALLRY COMPONENT      -->
+    <!-- ===================================== -->
     <section id="Work-Sample" class="portfolio section-bg">
       <div class="container">
         <div class="section-title">
@@ -524,18 +542,18 @@
               <div class="portfolio-links">
                 <a href="assets/img/Game ss/Multiplayer.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
                   title="Fusion Multiplayer Addon"><i class="bx bx-plus"></i></a>
-                <a href="https://drive.google.com/file/d/1-4GUmAdoSAow-mgNmbPovltw7YLXbZ6j/view?usp=sharing" target="_blank"
-                  title="More Details"><i class="bi bi-cloud-arrow-down"></i></a>
+                <a href="https://drive.google.com/file/d/1-4GUmAdoSAow-mgNmbPovltw7YLXbZ6j/view?usp=sharing"
+                  target="_blank" title="More Details"><i class="bi bi-cloud-arrow-down"></i></a>
               </div>
             </div>
           </div>
-        
+
           <div class="col-lg-4 col-md-6 portfolio-item filter-game">
             <div class="portfolio-wrap">
               <img src="assets/img/Game ss/Ludo SuperStar.png" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/Game ss/Ludo SuperStar.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                  title="Ludo SuperStar"><i class="bx bx-plus"></i></a>
+                <a href="assets/img/Game ss/Ludo SuperStar.png" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="Ludo SuperStar"><i class="bx bx-plus"></i></a>
                 <a href="https://play.google.com/store/apps/details?id=com.blacklightsw.ludo&hl=en_IN" target="_blank"
                   title="More Details"><i class="bi bi-cloud-arrow-down"></i></a>
               </div>
@@ -547,7 +565,9 @@
       </div>
     </section><!-- End Portfolio Section -->
 
-    <!-- ======= Contact Section ======= -->
+    <!-- ===================================== -->
+    <!-- 6. CONTACT FORM COMPONENT             -->
+    <!-- ===================================== -->
     <section id="contact" class="contact">
       <div class="container">
 
@@ -584,7 +604,7 @@
 
           </div>
 
-          <div class="col-lg-7 mt-5 p-5 mt-lg-0 d-flex align-items-stretch">
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
             <div class="Email_send info">
               <form action="https://formspree.io/f/xdordlkv" method="POST">
                 <div class="row">
@@ -645,8 +665,38 @@
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <!-- =============================== -->
+  <!-- 🧩 MODULAR JAVASCRIPT LOGIC -->
+  <!-- =============================== -->
+
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/gallery.js"></script>
+  <script src="assets/js/contact.js"></script>
+
+  <!-- Intersection Observer: play project videos only when in view -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var projectVideos = document.querySelectorAll('.project-video');
+
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          var video = entry.target;
+          if (entry.isIntersecting) {
+            video.play();
+          } else {
+            video.pause();
+          }
+        });
+      }, {
+        threshold: 0.4   // play when 40% of the video is visible
+      });
+
+      projectVideos.forEach(function (video) {
+        observer.observe(video);
+      });
+    });
+  </script>
 
 </body>
 
