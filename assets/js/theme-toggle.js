@@ -18,21 +18,21 @@
 
   // ── Update toggle button visuals ───────────────────────────────
   function updateToggleUI(theme) {
-    const btn   = document.getElementById('theme-toggle');
+    const btn = document.getElementById('theme-toggle');
     const label = btn && btn.querySelector('.toggle-label');
-    const icon  = btn && btn.querySelector('.toggle-icon');
+    const icon = btn && btn.querySelector('.toggle-icon');
     if (!btn) return;
 
     if (theme === 'dark') {
       if (label) label.textContent = 'Dark Mode';
-      if (icon)  icon.textContent  = '☀️';
+      if (icon) icon.textContent = '🌙';
       btn.setAttribute('aria-label', 'Switch to light mode');
-      btn.setAttribute('title',      'Switch to light mode');
+      btn.setAttribute('title', 'Switch to light mode');
     } else {
       if (label) label.textContent = 'Light Mode';
-      if (icon)  icon.textContent  = '🌙';
+      if (icon) icon.textContent = '☀️';
       btn.setAttribute('aria-label', 'Switch to dark mode');
-      btn.setAttribute('title',      'Switch to dark mode');
+      btn.setAttribute('title', 'Switch to dark mode');
     }
   }
 
@@ -45,9 +45,9 @@
   // ── Init ───────────────────────────────────────────────────────
   function init() {
     // Resolve saved preference or system preference, fallback to dark
-    const saved  = localStorage.getItem(STORAGE_KEY);
+    const saved = localStorage.getItem(STORAGE_KEY);
     const system = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
-    const theme  = saved || system || DEFAULT_THEME;
+    const theme = saved || system || DEFAULT_THEME;
 
     applyTheme(theme);
 
