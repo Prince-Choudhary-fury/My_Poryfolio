@@ -1,21 +1,54 @@
 /*--------------------------------------------------------------
 # Projects
 --------------------------------------------------------------*/
+/* Date / duration label below project title */
+.project-date {
+  font-size: 14px;
+  color: var(--project-muted);
+  margin-bottom: 8px;
+}
+
 .project-video {
   width: 100%;
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px var(--card-shadow);
 }
 
 .Projects .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #173b6c;
+  color: var(--project-h3-color);
+}
+
+/* Project section text colours */
+#Projects .content h3,
+#Projects .content h3 a {
+  color: var(--project-h3-color);
+}
+
+#Projects .content h3 a:hover {
+  color: var(--accent);
+}
+
+#Projects .content h6 {
+  color: var(--section-text-color);
+}
+
+#Projects .content p {
+  color: var(--project-text-color);
+}
+
+#Projects .content ul li {
+  color: var(--body-color);
+}
+
+/* Inline style overrides for date text inside projects */
+#Projects p[style],
+#Projects .content > p {
+  color: var(--project-muted) !important;
 }
 
 .Projects .content p:last-child {
   margin-bottom: 0;
 }
-
-

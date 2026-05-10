@@ -3,17 +3,18 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #272829;
+  color: var(--body-color);
+  background: var(--body-bg);
   overflow-x: hidden;
 }
 
 a {
-  color: #149ddd;
+  color: var(--link-color);
   text-decoration: none;
 }
 
 a:hover {
-  color: #37b3ed;
+  color: var(--link-hover);
   text-decoration: none;
 }
 
@@ -33,7 +34,7 @@ h6 {
   height: 4px;
   width: 30%;
   border-radius: 50%;
-  background-color: red;
+  background-color: var(--line-red);
   margin: auto;
   margin-top: 5%;
 }
@@ -45,7 +46,7 @@ h6 {
   border-radius: 50%;
   margin-top: 2%;
   margin-bottom: 5%;
-  background-color: green;
+  background-color: var(--line-green);
 }
 
 /*--------------------------------------------------------------
@@ -57,7 +58,7 @@ section {
 }
 
 .section-bg {
-  background: #f5f8fd;
+  background: var(--section-bg);
 }
 
 .section-title {
@@ -70,7 +71,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #173b6c;
+  color: var(--section-title-color);
 }
 
 .section-title h2::after {
@@ -79,13 +80,14 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #149ddd;
+  background: var(--accent);
   bottom: 0;
   left: 0;
 }
 
 .section-title p {
   margin-bottom: 0;
+  color: var(--section-text-color);
 }
 
 /*--------------------------------------------------------------
@@ -93,7 +95,7 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 20px 0;
-  background: #f9f9f9;
+  background: var(--section-bg);
 }
 
 .breadcrumbs h2 {
@@ -117,7 +119,7 @@ section {
 .breadcrumbs ol li+li::before {
   display: inline-block;
   padding-right: 10px;
-  color: #0e2442;
+  color: var(--section-title-color);
   content: "/";
 }
 

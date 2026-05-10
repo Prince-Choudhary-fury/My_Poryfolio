@@ -11,14 +11,14 @@
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #040b14;
+  background: var(--sidebar-bg);
   overflow-y: auto;
 }
 
 .sidebar-profile {
   padding: 20px 10px 15px;
   text-align: center;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid var(--sidebar-border);
   margin-bottom: 5px;
 }
 
@@ -33,13 +33,13 @@
 
 .sidebar-name a,
 .sidebar-name a:hover {
-  color: #fff;
+  color: var(--sidebar-name-color);
   text-decoration: none;
 }
 
 .sidebar-role {
   font-size: 11.5px;
-  color: #149ddd;
+  color: var(--sidebar-role-color);
   letter-spacing: 0.5px;
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -49,8 +49,8 @@
 #header .profile .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #212431;
-  color: #fff;
+  background: rgba(127, 127, 127, 0.15);
+  color: var(--sidebar-name-color);
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -62,7 +62,7 @@
 }
 
 #header .profile .social-links a:hover {
-  background: #149ddd;
+  background: var(--accent);
   color: #fff;
   text-decoration: none;
 }
@@ -128,7 +128,7 @@
 .nav-menu a:focus {
   display: flex;
   align-items: center;
-  color: #a8a9b4;
+  color: var(--sidebar-link-color);
   padding: 12px 15px;
   margin-bottom: 8px;
   transition: 0.3s;
@@ -139,7 +139,7 @@
 .nav-menu a:focus i {
   font-size: 24px;
   padding-right: 8px;
-  color: #6f7180;
+  color: var(--sidebar-link-icon);
 }
 
 .nav-menu a:hover,
@@ -147,14 +147,14 @@
 .nav-menu .active:focus,
 .nav-menu li:hover>a {
   text-decoration: none;
-  color: #fff;
+  color: var(--sidebar-link-hover);
 }
 
 .nav-menu a:hover i,
 .nav-menu .active i,
 .nav-menu .active:focus i,
 .nav-menu li:hover>a i {
-  color: #149ddd;
+  color: var(--sidebar-icon-hover);
 }
 
 /* Mobile Navigation */
@@ -167,7 +167,7 @@
   font-size: 24px;
   transition: all 0.4s;
   outline: none !important;
-  background-color: #149ddd;
+  background-color: var(--accent);
   color: #fff;
   width: 40px;
   height: 40px;
@@ -192,14 +192,14 @@
 --------------------------------------------------------------*/
 #footer {
   padding: 15px;
-  color: #f4f6fd;
+  color: var(--footer-color);
   font-size: 14px;
   position: fixed;
   left: 0;
   bottom: 0;
   width: 300px;
   z-index: 9999;
-  background: #040b14;
+  background: var(--footer-bg);
 }
 
 #footer .copyright {

@@ -13,7 +13,7 @@
 .facts .count-box i {
   display: block;
   font-size: 44px;
-  color: #149ddd;
+  color: var(--accent);
   float: left;
   line-height: 0;
 }
@@ -23,7 +23,7 @@
   line-height: 40px;
   display: block;
   font-weight: 700;
-  color: #050d18;
+  color: var(--resume-h4-color);
   margin-left: 60px;
 }
 
@@ -32,21 +32,21 @@
   margin: 0 0 0 60px;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
-  color: #122f57;
+  color: var(--section-text-color);
 }
 
 .facts .count-box a {
   font-weight: 600;
   display: block;
   margin-top: 20px;
-  color: #122f57;
+  color: var(--section-text-color);
   font-size: 15px;
   font-family: "Poppins", sans-serif;
   transition: ease-in-out 0.3s;
 }
 
 .facts .count-box a:hover {
-  color: #1f5297;
+  color: var(--accent);
 }
 
 /*--------------------------------------------------------------
@@ -57,13 +57,13 @@
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #050d18;
+  color: var(--resume-h4-color);
 }
 
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #1f5297;
+  border-left: 2px solid var(--timeline-border);
   position: relative;
 }
 
@@ -73,21 +73,27 @@
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #050d18;
+  color: var(--resume-h4-color);
   margin-bottom: 10px;
 }
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #e4edf9;
+  background: var(--resume-h5-bg);
+  color: var(--resume-h5-color);
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
+.resume .resume-item p {
+  color: var(--body-color);
+}
+
 .resume .resume-item ul {
   padding-left: 20px;
+  color: var(--body-color);
 }
 
 .resume .resume-item ul li {
@@ -106,7 +112,6 @@
   border-radius: 50px;
   left: -9px;
   top: 0;
-  background: #fff;
-  border: 2px solid #1f5297;
+  background: var(--timeline-dot-bg);
+  border: 2px solid var(--timeline-border);
 }
-

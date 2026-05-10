@@ -5,27 +5,20 @@
   padding-bottom: 130px;
 }
 
-/* .Email_send{
-  padding: 30px;
-  background: white;
-  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
-} */
-
-
 .contact .info {
   padding: 30px;
-  background: #fff;
+  background: var(--contact-info-bg);
   width: 100%;
-  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 24px 0 var(--contact-info-shadow);
 }
 
 .contact .info i {
   font-size: 20px;
-  color: #149ddd;
+  color: var(--accent);
   float: left;
   width: 44px;
   height: 44px;
-  background: #dff3fc;
+  background: var(--contact-icon-bg);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,14 +31,14 @@
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #050d18;
+  color: var(--contact-h4-color);
 }
 
 .contact .info p {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
-  color: #173b6c;
+  color: var(--contact-p-color);
 }
 
 .contact .info .email p {
@@ -72,22 +65,22 @@
 }
 
 .contact .info .social-links a:hover {
-  background: #149ddd;
+  background: var(--accent);
   color: #fff;
 }
 
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #149ddd;
+  background: var(--accent);
   color: #fff;
 }
 
 .contact .email-form {
   width: 100%;
   padding: 30px;
-  background: #fff;
-  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+  background: var(--contact-form-bg);
+  box-shadow: 0 0 24px 0 var(--contact-info-shadow);
 }
 
 .contact .email-form .form-group {
@@ -126,7 +119,7 @@
 
 .contact .email-form .loading {
   display: none;
-  background: #fff;
+  background: var(--contact-form-bg);
   text-align: center;
   padding: 15px;
 }
@@ -149,6 +142,7 @@
 
 .contact .email-form label {
   padding-bottom: 8px;
+  color: var(--body-color);
 }
 
 .contact .email-form input,
@@ -156,6 +150,16 @@
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
+  background: var(--card-bg);
+  color: var(--body-color);
+  border-color: var(--card-border);
+}
+
+.contact .email-form input:focus,
+.contact .email-form textarea:focus {
+  border-color: var(--accent);
+  background: var(--card-bg);
+  color: var(--body-color);
 }
 
 .contact .email-form input {
@@ -167,7 +171,7 @@
 }
 
 .contact .email-form button[type=submit] {
-  background: #149ddd;
+  background: var(--accent);
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -176,7 +180,7 @@
 }
 
 .contact .email-form button[type=submit]:hover {
-  background: #37b3ed;
+  background: var(--accent-hover);
 }
 
 @keyframes animate-loading {
@@ -188,4 +192,3 @@
     transform: rotate(360deg);
   }
 }
-

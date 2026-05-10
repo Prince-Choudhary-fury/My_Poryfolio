@@ -1,0 +1,218 @@
+/* =======================================
+   UNITY ASSET STORE SECTION
+   ======================================= */
+
+.unity-assets {
+  padding: 60px 0;
+}
+
+/* ---- Card Container ---- */
+.ua-card {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  background: var(--ua-card-bg);
+  border: 1px solid var(--ua-card-border);
+  border-radius: 18px;
+  padding: 36px;
+  box-shadow: 0 8px 32px var(--card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+              background-color 0.35s ease, border-color 0.35s ease;
+}
+
+.ua-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px var(--card-hover-shadow);
+}
+
+/* ---- Image Side ---- */
+.ua-image-wrap {
+  position: relative;
+  flex-shrink: 0;
+  width: 340px;
+}
+
+.ua-image {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.ua-image:hover {
+  transform: scale(1.02);
+}
+
+.ua-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(23, 23, 23, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  backdrop-filter: blur(6px);
+}
+
+.ua-badge i {
+  font-size: 13px;
+  color: #7cbfff;
+}
+
+/* ---- Content Side ---- */
+.ua-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Header row: title + sales badge */
+.ua-header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.ua-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--ua-title-color);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.ua-sales {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background: linear-gradient(135deg, #1a472a, #2d6a4f);
+  border: 1px solid #40916c;
+  color: #b7e4c7;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 5px 13px;
+  border-radius: 30px;
+  white-space: nowrap;
+  box-shadow: 0 0 12px rgba(64, 145, 108, 0.35);
+}
+
+.ua-sales i {
+  font-size: 14px;
+  color: #52b788;
+}
+
+/* Description */
+.ua-desc {
+  color: var(--ua-desc-color);
+  font-size: 14.5px;
+  line-height: 1.75;
+  margin: 0;
+}
+
+/* Features grid */
+.ua-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.ua-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background: var(--ua-feature-bg);
+  border: 1px solid var(--ua-feature-border);
+  border-radius: 10px;
+  padding: 11px 14px;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.ua-feature:hover {
+  background: var(--ua-feature-hover-bg);
+  border-color: var(--ua-feature-hover-border);
+}
+
+.ua-feature i {
+  font-size: 16px;
+  color: var(--ua-feature-icon);
+  margin-top: 1px;
+  flex-shrink: 0;
+}
+
+.ua-feature span {
+  font-size: 13px;
+  color: var(--ua-feature-text);
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* Action button */
+.ua-actions {
+  margin-top: 4px;
+}
+
+.ua-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  letter-spacing: 0.3px;
+  box-shadow: 0 4px 18px rgba(37, 99, 235, 0.4);
+  transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+}
+
+.ua-btn-primary:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(37, 99, 235, 0.55);
+  color: #fff;
+  text-decoration: none;
+}
+
+.ua-btn-primary i {
+  font-size: 17px;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 900px) {
+  .ua-card {
+    flex-direction: column;
+    gap: 28px;
+    padding: 24px;
+  }
+
+  .ua-image-wrap {
+    width: 100%;
+  }
+
+  .ua-features {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .ua-title {
+    font-size: 20px;
+  }
+
+  .ua-btn-primary {
+    width: 100%;
+    justify-content: center;
+  }
+}
