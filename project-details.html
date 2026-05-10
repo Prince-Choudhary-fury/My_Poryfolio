@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('portfolio-theme');
+        if (!t) {
+          t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        }
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) { }
+    })();
+  </script>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Project Details - Prince Choudhary</title>
+
+  <!-- Favicons -->
+  <link href="assets/img/Logo/Logo.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+  <!-- CSS Component Architecture -->
+  <link href="assets/css/theme.css" rel="stylesheet">
+  <link href="assets/css/layout/grid.css" rel="stylesheet">
+  <link href="assets/css/components/buttons.css" rel="stylesheet">
+  <link href="assets/css/sections/project-details.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Theme Toggle -->
+  <div class="header-controls">
+      <button id="theme-toggle" aria-label="Switch to light mode" title="Switch to light mode">
+        <span class="toggle-icon">☀️</span>
+        <span class="toggle-label">Dark Mode</span>
+        <span class="toggle-track"><span class="toggle-thumb"></span></span>
+      </button>
+  </div>
+
+  <main id="main">
+    <section class="project-details" data-aos="fade-up">
+      <div class="container">
+        
+        <!-- Back Button -->
+        <div class="pd-header">
+            <a href="index.html" id="back-to-portfolio" class="btn-back">
+                <i class="bi bi-arrow-left"></i> Back to Portfolio
+            </a>
+        </div>
+
+        <div id="project-content-container">
+            <!-- Content gets injected here by project-details.js -->
+            <div class="text-center py-5">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Custom JS -->
+  <script src="assets/js/theme-toggle.js"></script>
+  <script src="assets/js/projects-data.js"></script>
+  <script src="assets/js/project-details.js"></script>
+
+</body>
+</html>

@@ -67,9 +67,7 @@
   text-decoration: none;
 }
 
-#main {
-  margin-left: 300px;
-}
+/* Layout offset is now on #tab-container (see tabs.css) */
 
 .container,
 .container-fluid {
@@ -92,10 +90,6 @@
 @media (max-width: 1199px) {
   #header {
     left: -300px;
-  }
-
-  #main {
-    margin-left: 0;
   }
 
   .container,

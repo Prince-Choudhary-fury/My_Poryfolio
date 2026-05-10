@@ -1,0 +1,145 @@
+/*--------------------------------------------------------------
+# Project Details Page Styles
+--------------------------------------------------------------*/
+.project-details {
+    padding: 60px 0;
+    min-height: 100vh;
+    background-color: var(--body-bg);
+}
+
+.pd-header {
+    margin-bottom: 30px;
+}
+
+.btn-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: var(--surface-color);
+    color: var(--body-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-back:hover {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+    transform: translateX(-5px);
+}
+
+.pd-media-wrapper {
+    background: #000;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px var(--card-shadow);
+}
+
+.pd-video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    display: block;
+    border: none;
+}
+
+.pd-info {
+    padding-left: 20px;
+}
+
+.pd-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.pd-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.pd-title a {
+    color: var(--heading-color);
+    text-decoration: none;
+    transition: color 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.pd-title a i {
+    font-size: 20px;
+    color: var(--accent);
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.3s ease;
+}
+
+.pd-title a:hover {
+    color: var(--accent);
+}
+
+.pd-title a:hover i {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.pd-subtitle {
+    font-size: 16px;
+    color: var(--section-text-color);
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.pd-date {
+    font-size: 14px;
+    color: var(--project-muted);
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.pd-description {
+    color: var(--project-text-color);
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.pd-description ul {
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+.pd-description li {
+    margin-bottom: 10px;
+}
+
+/* Header Controls matching index.html */
+.header-controls {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .pd-info {
+        padding-left: 12px;
+        margin-top: 30px;
+    }
+    .pd-title {
+        font-size: 28px;
+    }
+}

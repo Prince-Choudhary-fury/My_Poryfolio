@@ -1,0 +1,124 @@
+/*===============================================================
+  TAB PANE SYSTEM
+  Sections are shown one at a time via JS tab switching.
+================================================================*/
+
+/* ── Tab Container ─────────────────────────────────────────── */
+#tab-container {
+  margin-left: 300px;
+  /* matches the sidebar width from sidebar.css */
+  min-height: 100vh;
+}
+
+@media (max-width: 1199px) {
+  #tab-container {
+    margin-left: 0;
+  }
+}
+
+/* Resume section hides itself until JS moves it into #tab-about */
+.tab-resume-pending {
+  display: none !important;
+}
+
+/* ── Individual Pane ───────────────────────────────────────── */
+.tab-pane {
+  display: none;
+  animation: tabFadeIn 0.35s ease;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+@keyframes tabFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── Sidebar Nav Tab Links ─────────────────────────────────── */
+.tab-link {
+  display: flex;
+  align-items: center;
+  color: var(--sidebar-link-color);
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+  font-size: 15px;
+  text-decoration: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.tab-link i {
+  font-size: 24px;
+  padding-right: 8px;
+  color: var(--sidebar-link-icon);
+  transition: color 0.3s;
+}
+
+.tab-link:hover,
+.tab-link.active {
+  color: var(--sidebar-link-hover);
+  text-decoration: none;
+}
+
+.tab-link:hover i,
+.tab-link.active i {
+  color: var(--sidebar-icon-hover);
+}
+
+/* Active tab: left accent bar */
+.tab-link.active {
+  position: relative;
+}
+
+.tab-link.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 60%;
+  background: var(--accent);
+  border-radius: 0 3px 3px 0;
+}
+
+/* ── “About” tab: hero natural height, resume scrolls below ── */
+#tab-about #hero {
+  min-height: 100vh;
+}
+
+/*
+  In a tab layout sections don’t need the 60px top-padding
+  that was designed for scroll-separation between stacked sections.
+  Remove it so content starts immediately at the top of each tab.
+  Keep a small bottom padding for breathing room.
+*/
+.tab-pane>section {
+  padding-top: 50px;
+}
+
+/* ── Remove stale #main margin (now handled by #tab-container) ── */
+#main {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+  AOS safety-net: force all animated elements fully visible inside
+  an active tab. Without this, data-aos elements start at opacity:0
+  and only reveal on scroll — which never triggers in a tab layout.
+*/
+.tab-pane.active [data-aos] {
+  opacity: 1 !important;
+  transform: none !important;
+}

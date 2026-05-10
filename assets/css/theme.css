@@ -8,175 +8,175 @@
 :root,
 [data-theme="dark"] {
   /* Sidebar / header */
-  --sidebar-bg:            #040b14;
-  --sidebar-border:        rgba(255, 255, 255, 0.08);
-  --sidebar-name-color:    #ffffff;
-  --sidebar-role-color:    #149ddd;
-  --sidebar-link-color:    #a8a9b4;
-  --sidebar-link-icon:     #6f7180;
-  --sidebar-link-hover:    #ffffff;
-  --sidebar-icon-hover:    #149ddd;
+  --sidebar-bg: #040b14;
+  --sidebar-border: rgba(255, 255, 255, 0.08);
+  --sidebar-name-color: #ffffff;
+  --sidebar-role-color: #149ddd;
+  --sidebar-link-color: #a8a9b4;
+  --sidebar-link-icon: #6f7180;
+  --sidebar-link-hover: #ffffff;
+  --sidebar-icon-hover: #149ddd;
 
   /* Main body / sections */
-  --body-bg:               #0d1117;
-  --body-color:            #c9d1d9;
-  --section-bg:            #111827;
-  --section-title-color:   #58a6ff;
-  --section-text-color:    #8b949e;
+  --body-bg: #0d1117;
+  --body-color: #c9d1d9;
+  --section-bg: #111827;
+  --section-title-color: #58a6ff;
+  --section-text-color: #8b949e;
 
   /* Cards / surfaces */
-  --card-bg:               #161b22;
-  --card-border:           #30363d;
-  --card-shadow:           rgba(0, 0, 0, 0.4);
-  --card-hover-shadow:     rgba(0, 0, 0, 0.6);
+  --card-bg: #161b22;
+  --card-border: #30363d;
+  --card-shadow: rgba(0, 0, 0, 0.4);
+  --card-hover-shadow: rgba(0, 0, 0, 0.6);
 
   /* Accent */
-  --accent:                #149ddd;
-  --accent-hover:          #37b3ed;
-  --accent-subtle:         rgba(20, 157, 221, 0.12);
-  --accent-border:         rgba(20, 157, 221, 0.3);
+  --accent: #149ddd;
+  --accent-hover: #37b3ed;
+  --accent-subtle: rgba(20, 157, 221, 0.12);
+  --accent-border: rgba(20, 157, 221, 0.3);
 
   /* Links */
-  --link-color:            #149ddd;
-  --link-hover:            #37b3ed;
+  --link-color: #149ddd;
+  --link-hover: #37b3ed;
 
   /* Resume / timeline */
-  --timeline-border:       #1f5297;
-  --timeline-dot-bg:       #0d1117;
-  --resume-h4-color:       #e6edf3;
-  --resume-h5-bg:          #1f2d40;
-  --resume-h5-color:       #79c0ff;
+  --timeline-border: #1f5297;
+  --timeline-dot-bg: #0d1117;
+  --resume-h4-color: #e6edf3;
+  --resume-h5-bg: #1f2d40;
+  --resume-h5-color: #79c0ff;
 
   /* Portfolio / work samples */
-  --portfolio-filter-bg:   #161b22;
-  --portfolio-filter-color:#c9d1d9;
+  --portfolio-filter-bg: #161b22;
+  --portfolio-filter-color: #c9d1d9;
 
   /* Unity assets card */
-  --ua-card-bg:            #161b22;
-  --ua-card-border:        #30363d;
-  --ua-title-color:        #e6edf3;
-  --ua-desc-color:         #8b949e;
-  --ua-feature-bg:         #1f2937;
-  --ua-feature-border:     #374151;
-  --ua-feature-hover-bg:   #1e3a5f;
-  --ua-feature-hover-border:#2563eb;
-  --ua-feature-icon:       #60a5fa;
-  --ua-feature-text:       #d1d5db;
+  --ua-card-bg: #161b22;
+  --ua-card-border: #30363d;
+  --ua-title-color: #e6edf3;
+  --ua-desc-color: #8b949e;
+  --ua-feature-bg: #1f2937;
+  --ua-feature-border: #374151;
+  --ua-feature-hover-bg: #1e3a5f;
+  --ua-feature-hover-border: #2563eb;
+  --ua-feature-icon: #60a5fa;
+  --ua-feature-text: #d1d5db;
 
   /* Contact */
-  --contact-info-bg:       #161b22;
-  --contact-info-shadow:   rgba(0, 0, 0, 0.3);
-  --contact-h4-color:      #e6edf3;
-  --contact-p-color:       #8b949e;
-  --contact-icon-bg:       #1e3a5f;
-  --contact-form-bg:       #161b22;
+  --contact-info-bg: #161b22;
+  --contact-info-shadow: rgba(0, 0, 0, 0.3);
+  --contact-h4-color: #e6edf3;
+  --contact-p-color: #8b949e;
+  --contact-icon-bg: #1e3a5f;
+  --contact-form-bg: #161b22;
 
   /* Footer */
-  --footer-bg:             #040b14;
-  --footer-color:          #f4f6fd;
+  --footer-bg: #040b14;
+  --footer-color: #f4f6fd;
 
   /* Dividers / lines */
-  --line-red:              #e74c3c;
-  --line-green:            #2ecc71;
+  --line-red: #e74c3c;
+  --line-green: #2ecc71;
 
   /* Projects text */
-  --project-h3-color:      #e6edf3;
-  --project-text-color:    #8b949e;
-  --project-muted:         #6e7681;
+  --project-h3-color: #e6edf3;
+  --project-text-color: #8b949e;
+  --project-muted: #8d8f92;
 
   /* Toggle button */
-  --toggle-bg:             rgba(255, 255, 255, 0.08);
-  --toggle-border:         rgba(255, 255, 255, 0.15);
-  --toggle-color:          #c9d1d9;
-  --toggle-hover-bg:       rgba(20, 157, 221, 0.18);
-  --toggle-icon:           "☀️";
+  --toggle-bg: rgba(255, 255, 255, 0.08);
+  --toggle-border: rgba(255, 255, 255, 0.15);
+  --toggle-color: #c9d1d9;
+  --toggle-hover-bg: rgba(20, 157, 221, 0.18);
+  --toggle-icon: "☀️";
 }
 
 /* ── Light Mode ──────────────────────────────────────────────── */
 [data-theme="light"] {
   /* Sidebar / header */
-  --sidebar-bg:            #ffffff;
-  --sidebar-border:        rgba(0, 0, 0, 0.08);
-  --sidebar-name-color:    #1a202c;
-  --sidebar-role-color:    #2563eb;
-  --sidebar-link-color:    #4a5568;
-  --sidebar-link-icon:     #a0aec0;
-  --sidebar-link-hover:    #1a202c;
-  --sidebar-icon-hover:    #2563eb;
+  --sidebar-bg: #ffffff;
+  --sidebar-border: rgba(0, 0, 0, 0.08);
+  --sidebar-name-color: #1a202c;
+  --sidebar-role-color: #2563eb;
+  --sidebar-link-color: #4a5568;
+  --sidebar-link-icon: #a0aec0;
+  --sidebar-link-hover: #1a202c;
+  --sidebar-icon-hover: #2563eb;
 
   /* Main body / sections */
-  --body-bg:               #f8fafc;
-  --body-color:            #2d3748;
-  --section-bg:            #eef2f7;
-  --section-title-color:   #173b6c;
-  --section-text-color:    #4a5568;
+  --body-bg: #f8fafc;
+  --body-color: #2d3748;
+  --section-bg: #eef2f7;
+  --section-title-color: #173b6c;
+  --section-text-color: #4a5568;
 
   /* Cards / surfaces */
-  --card-bg:               #ffffff;
-  --card-border:           #e2e8f0;
-  --card-shadow:           rgba(0, 0, 0, 0.08);
-  --card-hover-shadow:     rgba(0, 0, 0, 0.14);
+  --card-bg: #ffffff;
+  --card-border: #e2e8f0;
+  --card-shadow: rgba(0, 0, 0, 0.08);
+  --card-hover-shadow: rgba(0, 0, 0, 0.14);
 
   /* Accent */
-  --accent:                #2563eb;
-  --accent-hover:          #1d4ed8;
-  --accent-subtle:         rgba(37, 99, 235, 0.08);
-  --accent-border:         rgba(37, 99, 235, 0.25);
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+  --accent-subtle: rgba(37, 99, 235, 0.08);
+  --accent-border: rgba(37, 99, 235, 0.25);
 
   /* Links */
-  --link-color:            #2563eb;
-  --link-hover:            #1d4ed8;
+  --link-color: #2563eb;
+  --link-hover: #1d4ed8;
 
   /* Resume / timeline */
-  --timeline-border:       #2563eb;
-  --timeline-dot-bg:       #ffffff;
-  --resume-h4-color:       #1a202c;
-  --resume-h5-bg:          #e8f0fe;
-  --resume-h5-color:       #1e40af;
+  --timeline-border: #2563eb;
+  --timeline-dot-bg: #ffffff;
+  --resume-h4-color: #1a202c;
+  --resume-h5-bg: #e8f0fe;
+  --resume-h5-color: #1e40af;
 
   /* Portfolio / work samples */
-  --portfolio-filter-bg:   #ffffff;
-  --portfolio-filter-color:#2d3748;
+  --portfolio-filter-bg: #ffffff;
+  --portfolio-filter-color: #2d3748;
 
   /* Unity assets card */
-  --ua-card-bg:            #ffffff;
-  --ua-card-border:        #e2e8f0;
-  --ua-title-color:        #1a202c;
-  --ua-desc-color:         #4a5568;
-  --ua-feature-bg:         #f4f7fb;
-  --ua-feature-border:     #dde3ee;
-  --ua-feature-hover-bg:   #e8f0fe;
-  --ua-feature-hover-border:#a8c4f8;
-  --ua-feature-icon:       #2563eb;
-  --ua-feature-text:       #374151;
+  --ua-card-bg: #ffffff;
+  --ua-card-border: #e2e8f0;
+  --ua-title-color: #1a202c;
+  --ua-desc-color: #4a5568;
+  --ua-feature-bg: #f4f7fb;
+  --ua-feature-border: #dde3ee;
+  --ua-feature-hover-bg: #e8f0fe;
+  --ua-feature-hover-border: #a8c4f8;
+  --ua-feature-icon: #2563eb;
+  --ua-feature-text: #374151;
 
   /* Contact */
-  --contact-info-bg:       #ffffff;
-  --contact-info-shadow:   rgba(0, 0, 0, 0.12);
-  --contact-h4-color:      #050d18;
-  --contact-p-color:       #173b6c;
-  --contact-icon-bg:       #dff3fc;
-  --contact-form-bg:       #ffffff;
+  --contact-info-bg: #ffffff;
+  --contact-info-shadow: rgba(0, 0, 0, 0.12);
+  --contact-h4-color: #050d18;
+  --contact-p-color: #173b6c;
+  --contact-icon-bg: #dff3fc;
+  --contact-form-bg: #ffffff;
 
   /* Footer */
-  --footer-bg:             #1e293b;
-  --footer-color:          #f4f6fd;
+  --footer-bg: #1e293b;
+  --footer-color: #f4f6fd;
 
   /* Dividers / lines */
-  --line-red:              #e53e3e;
-  --line-green:            #38a169;
+  --line-red: #e53e3e;
+  --line-green: #38a169;
 
   /* Projects text */
-  --project-h3-color:      #1a202c;
-  --project-text-color:    #4a5568;
-  --project-muted:         #718096;
+  --project-h3-color: #1a202c;
+  --project-text-color: #4a5568;
+  --project-muted: #718096;
 
   /* Toggle button */
-  --toggle-bg:             rgba(0, 0, 0, 0.04);
-  --toggle-border:         rgba(0, 0, 0, 0.12);
-  --toggle-color:          #4a5568;
-  --toggle-hover-bg:       rgba(37, 99, 235, 0.1);
-  --toggle-icon:           "🌙";
+  --toggle-bg: rgba(0, 0, 0, 0.04);
+  --toggle-border: rgba(0, 0, 0, 0.12);
+  --toggle-color: #4a5568;
+  --toggle-hover-bg: rgba(37, 99, 235, 0.1);
+  --toggle-icon: "🌙";
 }
 
 /*===============================================================
@@ -264,7 +264,7 @@ body,
 .portfolio #portfolio-flters {
   transition:
     background-color 0.35s ease,
-    color           0.35s ease,
-    border-color    0.35s ease,
-    box-shadow      0.35s ease;
+    color 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
 }

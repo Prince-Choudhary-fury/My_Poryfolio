@@ -33,6 +33,9 @@
         itemSelector: '.portfolio-item'
       });
 
+      // Expose for tabs.js to call layout() when pane becomes visible
+      window._portfolioIsotope = portfolioIsotope;
+
       let portfolioFilters = select('#portfolio-flters li', true);
 
       on('click', '#portfolio-flters li', function (e) {
