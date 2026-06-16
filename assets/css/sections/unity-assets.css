@@ -18,6 +18,11 @@
   box-shadow: 0 8px 32px var(--card-shadow);
   transition: transform 0.3s ease, box-shadow 0.3s ease,
               background-color 0.35s ease, border-color 0.35s ease;
+  margin-bottom: 30px;
+}
+
+.ua-card:last-child {
+  margin-bottom: 0;
 }
 
 .ua-card:hover {
@@ -109,6 +114,17 @@
 .ua-sales i {
   font-size: 14px;
   color: #52b788;
+}
+
+.ua-sales.ua-price {
+  background: linear-gradient(135deg, #1e3a8a, #1e40af);
+  border-color: #3b82f6;
+  color: #dbeafe;
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.35);
+}
+
+.ua-sales.ua-price i {
+  color: #60a5fa;
 }
 
 /* Description */
